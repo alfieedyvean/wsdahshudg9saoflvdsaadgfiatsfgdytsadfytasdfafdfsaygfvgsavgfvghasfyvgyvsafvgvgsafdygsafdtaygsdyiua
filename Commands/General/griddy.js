@@ -3,8 +3,7 @@ const {SlashCommandBuilder, CommandInteraction, PermissionFlagsBits} = require("
 module.exports = {
     data: new SlashCommandBuilder()
     .setName("ronaldo")
-    .setDescription("Ronaldo griddys on you!")
-    .setDefaultMemberPermissions(PermissionFlagsBits.Administrator), // only allowed for admin users
+    .setDescription("Ronaldo griddys on you!"),
     execute(interaction) {
         interaction.reply({content: "Here's Ronaldo steps up for the griddy and scores with demolishing power and conviction", ephemeral: true})
     },

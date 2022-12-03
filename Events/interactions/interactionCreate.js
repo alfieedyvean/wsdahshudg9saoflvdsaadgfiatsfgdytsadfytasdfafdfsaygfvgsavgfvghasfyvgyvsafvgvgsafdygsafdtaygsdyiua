@@ -12,6 +12,7 @@ module.exports = {
       }
       command.execute(interaction, client);
     } else if (interaction.isButton()) {
+      const { customId } = interaction;
 
       if (customId == "verify") {
         const role = interaction.guild.roles.cache.get("1011041531114815579");
